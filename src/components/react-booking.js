@@ -151,13 +151,7 @@ export class ReactBooking extends Component {
               <div className="navigation-path">
                 <ul>
                   <NavLink
-                    label="Select Date"
-                    icon="icon-calendar"
-                    to="/datepicker"
-                    pathname={location.pathname}
-                  />
-                  <NavLink
-                    label="Attendance Information"
+                    label="Informations de la course"
                     icon="icon-user"
                     to="/personel-information"
                     backUrl="/"

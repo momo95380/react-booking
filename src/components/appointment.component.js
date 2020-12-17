@@ -95,7 +95,7 @@ export class AppointmentComponent extends Component {
         />
         {this.state.startDate && (
           <div className="text-center react-booking-appointments">
-            <h3>Active appointments</h3>
+            <h3>Crénaux disponible</h3>
 
             <div className="appointments">
               {appointmentsInDate.map(i => {
