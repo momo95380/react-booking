@@ -207,7 +207,7 @@ function (_Component2) {
             to: "/datepicker",
             pathname: location.pathname
           }), _react["default"].createElement(NavLink, {
-            label: "Attendance Information",
+            label: "Informations sur la course",
             icon: "icon-user",
             to: "/personel-information",
             backUrl: "/",
