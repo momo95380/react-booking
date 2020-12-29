@@ -107,7 +107,7 @@ function (_Component) {
           var form_data = (0, _objectSpread2["default"])({}, this.state.form, {
             id: store_data.slotId
           });
-          this.props.onFormSubmit(form_data);
+          this.props.onFormSubmit(form_data, 'teeeessstt');
           this.setState({
             loading: true
           });
