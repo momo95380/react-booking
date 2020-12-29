@@ -202,7 +202,7 @@ function (_Component2) {
           }, _react["default"].createElement("div", {
             className: "navigation-path"
           }, _react["default"].createElement("ul", null, _react["default"].createElement(NavLink, {
-            label: "Select Date",
+            label: "Selectionnez une date et un crénaux",
             icon: "icon-calendar",
             to: "/datepicker",
             pathname: location.pathname
