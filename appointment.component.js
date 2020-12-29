@@ -24,8 +24,6 @@ var _react = _interopRequireWildcard(require("react"));
 var _reactDatepicker = _interopRequireDefault(require("react-datepicker"));
 
 var _moment = _interopRequireDefault(require("moment"));
-import 'moment/locale/es'  // without this line it didn't work
-_moment.locale('es')
 
 var _store = require("./store");
 
