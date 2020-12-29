@@ -104,7 +104,9 @@ function (_Component) {
 
       if (parentProps.formMode === 'skip') {
         this.props.parentProps.onFormSubmit({
-          id: slot.id
+          id: slot.id,
+          start: slot.start,
+          end: slot.end,
         });
         return this.props.history.push('/final-status');
       }
