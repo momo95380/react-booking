@@ -23,7 +23,9 @@ var _react = _interopRequireWildcard(require("react"));
 
 var _reactDatepicker = _interopRequireDefault(require("react-datepicker"));
 
-var _moment = _interopRequireDefault(require("moment"));
+import moment from 'moment';
+import 'moment/locale/fr'  // without this line it didn't work
+moment.locale('fr');
 
 var _store = require("./store");
 
@@ -151,7 +153,7 @@ function (_Component) {
           onClick: function onClick() {
             return _this2.confirmAppointment(i);
           }
-        }, "Confirm")));
+        }, "Confirmer")));
       }))));
     }
   }]);
