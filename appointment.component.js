@@ -134,7 +134,7 @@ function (_Component) {
         onChange: this.handleDatepicker
       }), this.state.startDate && _react["default"].createElement("div", {
         className: "text-center react-booking-appointments"
-      }, _react["default"].createElement("h3", null, "Active appointments"), _react["default"].createElement("div", {
+      }, _react["default"].createElement("h3", null, "Crénaux disponibles"), _react["default"].createElement("div", {
         className: "appointments"
       }, appointmentsInDate.map(function (i) {
         return _react["default"].createElement("div", {
