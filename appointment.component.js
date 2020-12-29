@@ -97,10 +97,11 @@ function (_Component) {
         slotId: slot.id,
         slotDate: slot.start,
         slotTime: "".concat((0, _moment["default"])(slot.start).format('HH:mm'), " - ").concat((0, _moment["default"])(slot.end).format('HH:mm')),
-        slotPrice: slot.price ? "".concat(slot.price.amount, " ").concat(slot.price.curr) : null
       };
       (0, _store.setAppointment)(this.props.module_id, data);
       var parentProps = this.props.parentProps;
+
+      this.props.parentProps.onDateSubmit(data);
 
       if (parentProps.formMode === 'skip') {
         this.props.parentProps.onFormSubmit({

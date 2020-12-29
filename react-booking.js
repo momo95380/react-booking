@@ -240,6 +240,7 @@ function (_Component2) {
               return _react["default"].createElement(_appointment.AppointmentComponent, (0, _extends2["default"])({}, props, {
                 module_id: _this2.state.module_id,
                 campaign: campaign,
+                onDateSubmit: _this2.props.onDateSubmit,
                 parentProps: _this2.props,
                 appointments: _this2.props.appointments
               }));
@@ -289,6 +290,7 @@ ReactBooking.propTypes = {
   appointments: _propTypes["default"].array,
   visibleTab: _propTypes["default"].string,
   formMode: _propTypes["default"].string,
+  onDateSubmit: _propTypes["default"].func,
   onFormSubmit: _propTypes["default"].func,
   scrollAdjust: _propTypes["default"].string
 };
@@ -302,6 +304,9 @@ ReactBooking.defaultProps = {
   formMode: 'normal',
   onFormSubmit: function onFormSubmit(params) {
     return console.warn('You need to implement `onFormSubmit` and integrate it with your project.', params);
+  },
+  onDateSubmit: function onDateSubmit(params) {
+    return console.warn('You need to implement `onDateSubmit` and integrate it with your project.', params);
   },
   scrollAdjust: 'smooth'
 };
