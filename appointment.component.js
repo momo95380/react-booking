@@ -23,6 +23,10 @@ var _react = _interopRequireWildcard(require("react"));
 
 var _reactDatepicker = _interopRequireDefault(require("react-datepicker"));
 
+var french = _interopRequireDefault(require('date-fns/locale/fr'));
+
+_reactDatepicker.registerLocale('fr', french);
+
 var _moment = _interopRequireDefault(require("moment"));
 
 var _store = require("./store");

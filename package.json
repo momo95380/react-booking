@@ -34,6 +34,7 @@
     "@babel/cli": "^7.5.5",
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-sass": "^1.0.1",
+    "date-fns": "^2.16.1",
     "gh-pages": "^2.0.1",
     "moment": "^2.24.0",
     "next": "^8.1.0",
