@@ -101,9 +101,12 @@ function (_Component) {
       (0, _store.setAppointment)(this.props.module_id, data);
       var parentProps = this.props.parentProps;
 
+      const startDate = new Date(slot.start);
+      const endDate = new Date(slot.end);
+
       this.props.parentProps.onDateSubmit({
-        start: new Date(slot.start),
-        end: new Date(slot.end),
+        start: startDate,
+        end: endDate
       });
 
       if (parentProps.formMode === 'skip') {
