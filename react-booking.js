@@ -127,7 +127,7 @@ function (_Component2) {
   (0, _createClass2["default"])(ReactBooking, [{
     key: "componentWillReceiveProps",
     value: function componentWillReceiveProps(nextProps) {
-      console.log(nextProps);
+      console.log('nextProps');
     }
   }, {
     key: "componentDidMount",
