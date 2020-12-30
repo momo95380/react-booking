@@ -140,7 +140,8 @@ function (_Component) {
         selectsStart: true,
         selected: this.state.startDate,
         includeDates: includeDates,
-        onChange: this.handleDatepicker
+        onChange: this.handleDatepicker,
+        locale: "fr"
       }), this.state.startDate && _react["default"].createElement("div", {
         className: "text-center react-booking-appointments"
       }, _react["default"].createElement("h3", null, "Crénaux disponibles"), _react["default"].createElement("div", {
