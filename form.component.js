@@ -177,7 +177,7 @@ function (_Component) {
         className: "flex-1"
       }, _react["default"].createElement(_formInput.FormInputComponent, {
         name: "customer_fullname",
-        title: "FULLNAME",
+        title: "Nom et prénom",
         icon: "icon-user",
         response: this.state.response,
         onChange: function onChange(e) {
@@ -187,7 +187,7 @@ function (_Component) {
         className: "flex-1"
       }, _react["default"].createElement(_formInput.FormInputComponent, {
         name: "customer_email",
-        title: "EMAIL",
+        title: "Votre email",
         icon: "icon-at-sign",
         response: this.state.response,
         onChange: function onChange(e) {
@@ -197,7 +197,7 @@ function (_Component) {
         className: "flex-1"
       }, _react["default"].createElement(_formInput.FormInputComponent, {
         name: "customer_phone",
-        title: "PHONE NUMBER",
+        title: "Numéro de téléphone",
         icon: "icon-phone",
         response: this.state.response,
         onChange: function onChange(e) {
@@ -209,7 +209,7 @@ function (_Component) {
         className: "flex-3"
       }, _react["default"].createElement(_formInput.FormInputComponent, {
         name: "customer_address",
-        title: "ADDRESS (optional)",
+        title: "Adresse",
         icon: "icon-map-pin",
         response: this.state.response,
         onChange: function onChange(e) {
@@ -219,7 +219,7 @@ function (_Component) {
         className: "flex-1"
       }, _react["default"].createElement(_formInput.FormInputComponent, {
         name: "customer_zipCode",
-        title: "ZIP CODE (optional)",
+        title: "Code postal",
         icon: "icon-map",
         response: this.state.response,
         onChange: function onChange(e) {
@@ -233,11 +233,11 @@ function (_Component) {
           return _this2.previousStep();
         },
         className: "btn btn-default",
-        value: "Previous Step"
+        value: "Retour"
       }), _react["default"].createElement("button", {
         type: "submit",
         className: "btn btn-primary"
-      }, "Next Step"))));
+      }, "Valider ma course"))));
     }
   }]);
   return FormComponent;
