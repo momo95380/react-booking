@@ -23,9 +23,9 @@ var _react = _interopRequireWildcard(require("react"));
 
 var _reactDatepicker = _interopRequireDefault(require("react-datepicker"));
 
-import fr from 'date-fns/locale/fr';
+var fr = require('date-fns/locale/fr');
 
-_reactDatepicker.registerLocale('fr', fr);
+_reactDatepicker.registerLocale('fr', fr)
 
 var _moment = _interopRequireDefault(require("moment"));
 
