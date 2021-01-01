@@ -208,12 +208,22 @@ function (_Component) {
       }, _react["default"].createElement("div", {
         className: "flex-3"
       }, _react["default"].createElement(_formInput.FormInputComponent, {
-        name: "customer_address",
-        title: "Adresse",
+        name: "customer_address_start",
+        title: "Adresse de départ",
         icon: "icon-map-pin",
         response: this.state.response,
         onChange: function onChange(e) {
-          return _this2.setFormState('customer_address', e);
+          return _this2.setFormState('customer_address_start', e);
+        }
+      })), _react["default"].createElement("div", {
+        className: "flex-3"
+      }, _react["default"].createElement(_formInput.FormInputComponent, {
+        name: "customer_address_end",
+        title: "Adresse d'arrivé",
+        icon: "icon-map-pin",
+        response: this.state.response,
+        onChange: function onChange(e) {
+          return _this2.setFormState('customer_address_end', e);
         }
       })), _react["default"].createElement("div", {
         className: "flex-1"
