@@ -1088,7 +1088,9 @@ body {
   box-shadow: 0 0 5px #ddd;
   border-radius: 5px;
   overflow: hidden;
-  position: relative; }
+  position: relative; 
+  background-color: white;
+}
 
 .appointments {
   display: flex;
