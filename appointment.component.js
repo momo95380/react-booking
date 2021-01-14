@@ -57,7 +57,8 @@ function (_Component) {
     _this.ref = _react["default"].createRef();
     _this.state = {
       data: null,
-      selectedSlot: null
+      selectedSlot: null,
+      time: '13:00',
     };
     return _this;
   }
@@ -122,7 +123,14 @@ function (_Component) {
 
       this.props.history.push('/personel-information');
     }
-  }, {
+  },{
+    key: "selectTime",
+    value: function selectTime(time) {
+      this.setState({
+        time,
+      });
+    }
+  },{
     key: "render",
     value: function render() {
       var _this2 = this;
@@ -165,7 +173,8 @@ function (_Component) {
           }
         }, "Confirmer")));
       })), _react["default"].createElement(_reactTimepicker["default"], {
-
+        value: this.state.time,
+        onChange: function onChange(value) { _this2.selectTime(value) }
       }),));
     }
   }]);
