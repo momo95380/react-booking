@@ -23,6 +23,8 @@ var _react = _interopRequireWildcard(require("react"));
 
 var _reactDatepicker = _interopRequireDefault(require("react-datepicker"));
 
+var _reactTimepicker = _interopRequireDefault(require("react-time-picker"));
+
 var _moment = _interopRequireDefault(require("moment"));
 
 var _store = require("./store");
@@ -162,7 +164,10 @@ function (_Component) {
             return _this2.confirmAppointment(i);
           }
         }, "Confirmer")));
-      }))));
+      })), _react["default"].createElement(_reactTimepicker["default"], {
+
+      }),
+      ));
     }
   }]);
   return AppointmentComponent;

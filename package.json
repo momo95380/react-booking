@@ -47,6 +47,7 @@
     "react-router-dom": "^5.0.1",
     "react-router-scroll-memory": "^2.0.3",
     "react-scripts": "3.0.1",
+    "react-time-picker": "^4.1.2",
     "react-transition-group": "^4.2.1",
     "rxjs": "^6.5.2",
     "rxprop": "^1.0.2",
