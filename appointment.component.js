@@ -164,10 +164,7 @@ function (_Component) {
             return _this2.confirmAppointment(i);
           }
         }, "Confirmer")));
-      })), _react["default"].createElement(_reactTimepicker["default"], {
-
-      }),
-      ));
+      }))));
     }
   }]);
   return AppointmentComponent;
