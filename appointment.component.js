@@ -29,8 +29,6 @@ var _moment = _interopRequireDefault(require("moment"));
 
 var _store = require("./store");
 
-import 'react-time-picker/dist/TimePicker.css';
-
 var AppointmentComponent =
 /*#__PURE__*/
 function (_Component) {
