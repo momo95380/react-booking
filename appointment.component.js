@@ -154,28 +154,18 @@ function (_Component) {
         locale: ""
       }), this.state.startDate && _react["default"].createElement("div", {
         className: "text-center react-booking-appointments"
-      }, _react["default"].createElement("h3", null, "Crénaux disponibles"), _react["default"].createElement("div", {
-        className: "appointments"
-      }, appointmentsInDate.map(function (i) {
-        return _react["default"].createElement("div", {
-          onClick: function onClick() {
-            return _this2.handleSeletctedSlot(i.id);
-          },
-          key: i.id,
-          className: _this2.state.selectedSlot === i.id ? 'appointment selected' : 'appointment'
-        }, _react["default"].createElement("div", {
-          className: "appointment-time"
-        }, _react["default"].createElement("span", null, (0, _moment["default"])(i.start).format('HH:mm')), " -", ' ', _react["default"].createElement("span", null, (0, _moment["default"])(i.end).format('HH:mm'))), _react["default"].createElement("div", {
-          className: "appointment-confirm"
-        }, _react["default"].createElement("button", {
-          onClick: function onClick() {
-            return _this2.confirmAppointment(i);
-          }
-        }, "Confirmer")));
-      })), _react["default"].createElement(_reactTimepicker["default"], {
+      }, _react["default"].createElement("h3",  {
+        className: "title-time"
+      }, "Chosissez une heure"), _react["default"].createElement(_reactTimepicker["default"], {
         value: this.state.time,
         onChange: function onChange(value) { _this2.selectTime(value) }
-      }),));
+      }),  _react["default"].createElement("div", {
+        className: "appointment-confirm"
+      }, _react["default"].createElement("button", {
+        onClick: function onClick() {
+          return _this2.confirmAppointment();
+        }
+      }, "Confirmer")) ));
     }
   }]);
   return AppointmentComponent;
