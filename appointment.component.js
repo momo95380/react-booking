@@ -23,7 +23,7 @@ var _react = _interopRequireWildcard(require("react"));
 
 var _reactDatepicker = _interopRequireDefault(require("react-datepicker"));
 
-var _reactTimepicker = _interopRequireDefault(require("react-datepicker"));
+var _reactTimepicker = _interopRequireDefault(require("react-time-picker"));
 
 var _moment = _interopRequireDefault(require("moment"));
 
