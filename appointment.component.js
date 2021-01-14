@@ -176,7 +176,10 @@ function (_Component) {
       }),  _react["default"].createElement("div", {
         className: "appointment-confirm"
       }, _react["default"].createElement("button", {
+        autoFocus: true,
         className: 'button-confirm',
+        hourPlaceholder: '00',
+        minutePlaceholder: '00',
         onClick: function onClick() {
           return _this2.confirmAppointment();
         }
