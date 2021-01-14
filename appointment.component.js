@@ -126,14 +126,14 @@ function (_Component) {
         end: endDate
       });*/
 
-
       const date = new Date(this.state.startDate);
-
       const timeArray = this.state.time.split(':')
-
       date.setHours(timeArray[0], timeArray[1], 0);
 
-      console.log('confirm', date);
+      this.props.parentProps.onDateSubmit({
+        start: date,
+        end: date
+      });
 
       this.props.history.push('/personel-information');
     }
