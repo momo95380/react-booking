@@ -96,7 +96,7 @@ function (_Component) {
   }, {
     key: "confirmAppointment",
     value: function confirmAppointment(slot) {
-      var data = {
+/*      var data = {
         slotId: slot.id,
         slotDate: slot.start,
         slotTime: "".concat((0, _moment["default"])(slot.start).format('HH:mm'), " - ").concat((0, _moment["default"])(slot.end).format('HH:mm')),
@@ -119,7 +119,15 @@ function (_Component) {
           end: slot.end,
         });
         return this.props.history.push('/final-status');
-      }
+      } */
+
+      /*this.props.parentProps.onDateSubmit({
+        start: startDate,
+        end: endDate
+      });*/
+
+
+      console.log('confirm', this.state.startDate, this.state.time);
 
       this.props.history.push('/personel-information');
     }
@@ -162,6 +170,7 @@ function (_Component) {
       }),  _react["default"].createElement("div", {
         className: "appointment-confirm"
       }, _react["default"].createElement("button", {
+        className: 'button-confirm',
         onClick: function onClick() {
           return _this2.confirmAppointment();
         }
