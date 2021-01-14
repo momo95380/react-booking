@@ -127,7 +127,13 @@ function (_Component) {
       });*/
 
 
-      console.log('confirm', this.state.startDate, this.state.time);
+      const date = new Date(this.state.startDate);
+
+      const timeArray = this.state.time.split(':')
+
+      date.setHours(timeArray[0], timeArray[1], 0);
+
+      console.log('confirm', date);
 
       this.props.history.push('/personel-information');
     }
