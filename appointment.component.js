@@ -1,5 +1,7 @@
 "use strict";
 
+import 'react-time-picker/dist/TimePicker.css';
+
 var _interopRequireWildcard = require("@babel/runtime/helpers/interopRequireWildcard");
 
 var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
@@ -28,6 +30,8 @@ var _reactTimepicker = _interopRequireDefault(require("react-time-picker"));
 var _moment = _interopRequireDefault(require("moment"));
 
 var _store = require("./store");
+
+import 'react-time-picker/dist/TimePicker.css';
 
 var AppointmentComponent =
 /*#__PURE__*/
