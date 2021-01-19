@@ -226,16 +226,6 @@ function (_Component) {
           return _this2.setFormState('customer_address_end', e);
         }
       })), _react["default"].createElement("div", {
-        className: "flex-1"
-      }, _react["default"].createElement(_formInput.FormInputComponent, {
-        name: "customer_zipCode",
-        title: "Code postal",
-        icon: "icon-map",
-        response: this.state.response,
-        onChange: function onChange(e) {
-          return _this2.setFormState('customer_zipCode', e);
-        }
-      }))), _react["default"].createElement("div", {
         className: "button-wrapper d-flex flex-end"
       }, _react["default"].createElement("input", {
         type: "button",
@@ -247,8 +237,8 @@ function (_Component) {
       }), _react["default"].createElement("button", {
         type: "submit",
         className: "btn btn-primary"
-      }, "Valider ma course"))));
-    }
+      }, "Valider ma course")))),
+      )}
   }]);
   return FormComponent;
 }(_react.Component);
