@@ -219,7 +219,7 @@ function (_Component) {
         className: "flex-3"
       }, _react["default"].createElement(_formInput.FormInputComponent, {
         name: "customer_address_end",
-        title: "Adresse d'arrivé",
+        title: "Adresse d'arrivée",
         icon: "icon-map-pin",
         response: this.state.response,
         onChange: function onChange(e) {
